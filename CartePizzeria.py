@@ -17,3 +17,7 @@ class CartePizzeria:
                 self.pizzas.remove(pizza)
                 return
         raise CartePizzeriaException(f"La pizza {name} n'existe pas dans la carte de la pizzeria.")
+    
+class CartePizzeriaException(Exception):
+    """Exception dedicated to CartePizzeria."""
+    pass
