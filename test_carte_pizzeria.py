@@ -25,7 +25,7 @@ class TestCartePizzeria(unittest.TestCase):
     def test_remove_pizza(self):
         carte = CartePizzeria()
         carte.add_pizza({'name': 'Margherita', 'price': 10})
-        self.carte.remove_pizza("Margherita")
+        carte.remove_pizza("Margherita")
         self.assertEqual(self.carte.nb_pizzas(), 0)
 
 if __name__ == "__main__":
